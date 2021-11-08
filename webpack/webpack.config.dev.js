@@ -2,7 +2,7 @@ const Path = require('path');
 const Webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const ESLintPlugin = require('eslint-webpack-plugin');
-const StylelintPlugin = require('stylelint-webpack-plugin');
+// const StylelintPlugin = require('stylelint-webpack-plugin');
 
 const common = require('./webpack.common.js');
 
@@ -26,9 +26,9 @@ module.exports = merge(common, {
       emitWarning: true,
       files: Path.resolve(__dirname, '../src'),
     }),
-    new StylelintPlugin({
-      files: Path.join('src', '**/*.s?(a|c)ss'),
-    }),
+    // new StylelintPlugin({
+    //   files: Path.join('src', '**/*.s?(a|c)ss'),
+    // }),
     new ESLintPlugin({
       emitWarning: true,
     }),
