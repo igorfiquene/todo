@@ -16,6 +16,7 @@ module.exports = merge(common, {
   devServer: {
     inline: true,
     hot: true,
+    port: 9000,
   },
   plugins: [
     new Webpack.DefinePlugin({

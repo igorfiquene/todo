@@ -1,0 +1,51 @@
+/*
+|--------------------------------------------------------------------------
+| MAIN
+|--------------------------------------------------------------------------
+*/
+
+
+.list {
+	background-color: white;
+	border-radius: 15px;
+	padding: 20px 40px;
+
+	&__header {
+
+		.list-title {
+			align-items: center;
+			color: var(--color-text-default);
+			display: flex;
+			justify-content: space-between;
+			font-weight: bold;
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+
+		.list-tasks {
+			color: var(--color-text-orange);
+			font-size: 12px;
+			font-weight: bold;
+		}
+
+		.list-button {
+			background-color: var(--background-color-default);
+
+			&::before,
+			&::after {
+				background-color: white;
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+				height: 2px;
+				width: 10px;
+			}
+
+			&::after {
+				transform: translateY(-50%) translateX(-50%) rotate(90deg);
+			}
+		}
+	}
+}

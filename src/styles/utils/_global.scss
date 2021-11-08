@@ -4,6 +4,10 @@
 |--------------------------------------------------------------------------
 */
 
+body {
+	background-color: var(--background-color-default);
+}
+
 .limit {
 	max-width: $site-width;
 	margin: auto;

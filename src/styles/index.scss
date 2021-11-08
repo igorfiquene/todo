@@ -4,12 +4,17 @@
 |--------------------------------------------------------------------------
 */
 
-  // Utils
+// Utils
 
   @import "utils/vars";
   @import "utils/reset";
   @import "utils/global";
 
-  // Partials
+// Partials
 
   @import "partials/header";
+  @import "partials/main";
+
+// Components
+
+  @import "components/button";
