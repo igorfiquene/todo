@@ -10,15 +10,17 @@
 	border-radius: 15px;
 	padding: 20px 40px;
 
-	&__header {
+	// Header List Style
 
+	&__header {
+		margin-bottom: 40px;
 		.list-title {
 			align-items: center;
 			color: var(--color-text-default);
 			display: flex;
 			justify-content: space-between;
 			font-weight: bold;
-			font-size: 16px;
+			font-size: 18px;
 			margin-bottom: 10px;
 		}
 
@@ -45,6 +47,37 @@
 
 			&::after {
 				transform: translateY(-50%) translateX(-50%) rotate(90deg);
+			}
+		}
+	}
+
+	// Body List Style
+
+	&__body {
+		.list-item {
+			align-items: center;
+			display: flex;
+			margin-bottom: 20px;
+		}
+
+		input[type=checkbox] {
+			margin-right: 20px;
+		}
+
+		.list-item__content {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			position: relative;
+
+			&::before {
+				content: '';
+				background-color: $color3;
+				position: absolute;
+				bottom: -10px;
+				height: 2px;
+				width: 100%;
 			}
 		}
 	}
