@@ -1,15 +1,14 @@
 /*
 |--------------------------------------------------------------------------
-| Import
+| Global
 |--------------------------------------------------------------------------
 */
 
-  // Utils
-
-  @import "utils/vars";
-  @import "utils/reset";
-  @import "utils/global";
-
-  // Partials
-
-  @import "partials/header";
+.limit {
+	max-width: $site-width;
+	margin: auto;
+	padding: 0 30px;
+	@media #{$to-desk} {
+		padding: 0;
+	}
+}
