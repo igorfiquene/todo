@@ -20,6 +20,8 @@ input[type=checkbox] {
 	position: relative;
 
 	&:checked {
+		border: 0;
+		
 		&::after {
 			transform: translateY(-50%) translateX(-50%) scale(3);
 			opacity: 0;
@@ -36,7 +38,7 @@ input[type=checkbox] {
 		top: 50%;
 		left: 50%;
 		transform: translateY(-50%) translateX(-50%) scale(1.0);
-		transition: all .5s ease;
+		transition: all .2s ease;
 		opacity: 1;
 		transform-origin: center;
 
