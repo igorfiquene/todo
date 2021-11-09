@@ -44,3 +44,24 @@ input[type=checkbox] {
 
 	}
 }
+
+.list-button {
+	appearance: none;
+	background-color: var(--background-color-default);
+	position: relative;
+	
+
+	&::before,
+	&::after {
+		background-color: white;
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		height: 2px;
+		width: 10px;
+	}
+
+	&::after { transform: translateY(-50%) translateX(-50%) rotate(90deg); }
+}

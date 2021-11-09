@@ -1,0 +1,32 @@
+/*
+|--------------------------------------------------------------------------
+| Footer
+|--------------------------------------------------------------------------
+*/
+
+footer {
+	background-color: #fff;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+
+	#form-new-task {
+		padding: 20px 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.new-task {
+		border-bottom: 1px solid #E5E5E5;
+		font-style: italic;
+	}
+
+	.submit-task {
+		color: #fff;
+		background-color: $color1;
+		padding: 15px 30px;
+		border-radius: 10px;
+	}
+
+}
