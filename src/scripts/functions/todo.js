@@ -7,8 +7,15 @@ export default function () {
 	form.addEventListener('submit', (event) => {
 		event.preventDefault();
 
-		setNewTask(inputNewTask.value);
-
+		var allTasks = JSON.parse(localStorage.getItem('item'));
+		console.log(allTasks);
+		
+		if (inputNewTask.value == (null || "")) {
+			alert("Task can´t be empty!");
+		} else {
+			setNewTask(inputNewTask.value);
+		}
+		
 	});
 
 	function setNewTask(newTask) {
