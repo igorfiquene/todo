@@ -15,9 +15,7 @@ export default function () {
 		const newTaskItem = document.createElement('li');
 
 		newTaskItem.setAttribute('class', 'list-item');
-
 		newTaskItem.innerHTML = newTask;
-
 		listTasks.appendChild(newTaskItem);
 
 		setLocalStorage(newTask);
@@ -26,7 +24,10 @@ export default function () {
 	}
 
 	function setLocalStorage(inputValue) {
-		localStorage.setItem('item', inputValue);
+		var task = [];
+    task = JSON.parse(localStorage.getItem('item')) || [];
+    task.push(inputValue);
+    localStorage.setItem('item', JSON.stringify(task));
 	}
 	
 }
